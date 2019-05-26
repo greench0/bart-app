@@ -3,7 +3,7 @@
 var APIKey = "MW9S-E7SL-26DU-VV8V";
 
 // Here we are building the URL we need to query the database
-var queryURL = "http://api.bart.gov/api/etd.aspx?cmd=etd&orig=19th&key=" + APIKey + '&json=y';
+var queryURL = "https://api.bart.gov/api/etd.aspx?cmd=etd&orig=19th&key=" + APIKey + '&json=y';
 
 // Here we run our AJAX call to the OpenWeatherMap API
 $.ajax({
