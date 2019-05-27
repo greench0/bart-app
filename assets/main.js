@@ -53,8 +53,8 @@ console.log(strUser);
 
 stationAbbr = strUser;
 
+$(".station").empty();
 $(".etd").empty();
-$(".misc").empty();
 
 loadStation();
 }
@@ -92,7 +92,8 @@ $.ajax({
     // var example = data.childNodes[0].innerHTML;
      date = data.root.date;
      time = data.root.time;
-     stationName = data.root.station[0].name;
+
+     stationName = data.root.station[0].name.toUpperCase();
      stationEtd = data.root.station[0].etd;
 
 
@@ -104,26 +105,24 @@ $.ajax({
 
         destinationData.append(p);
 
-        // console.log(stationEtd[0].estimate.length);
-
       for (var j = 0; j < stationEtd[i].estimate.length; j++) {
         var p2 = $("<p>").html("Arrives in: " + stationEtd[i].estimate[j].minutes + " MIN");
 
-        // console.log(stationEtd[i].estimate[j].minutes);
         destinationData.append(p2);
 
       }
 
 
-      $(".misc").append(destinationData);
+      $(".etd").append(destinationData);
     }
 
 
 
     // Transfer content to HTML
-    $(".info").html("<h2>" + date + "</h2>");
-    $(".station").html("<h3>" + time + "</h3>");
-    $(".etd").html("<h1>" + stationName + "</h1>");
+    $(".date").html("<h2>" + date + "</h2>");
+    $(".time").html("<h4>" + time + "</h4>");
+
+    $(".station").html("<h1 class='bold'>" + stationName + "</h1>");
 
   });
 
