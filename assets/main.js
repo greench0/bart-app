@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var stationAbbr = "19th";
+  var stationAbbr = "12th";
 
 $.ajax({
   type: 'GET',//or 'GET'
@@ -101,7 +101,7 @@ $.ajax({
     for (var i = 0; i < stationEtd.length; i++) {
       var destinationData = $("<div class='destination'></div>");
       // var rating = results[i].rating;
-      var p = $("<h3>").html(stationEtd[i].destination + " - : " + stationEtd[i].estimate[0].direction);
+      var p = $("<h3>").html(stationEtd[i].destination + " - " + stationEtd[i].estimate[0].direction);
 
         destinationData.append(p);
 
@@ -119,7 +119,7 @@ $.ajax({
 
 
     // Transfer content to HTML
-    $(".date").html("<h2>" + date + "</h2>");
+    $(".date").html("<h2 class='bold'>" + date + "</h2>");
     $(".time").html("<h4>" + time + "</h4>");
 
     $(".station").html("<h1 class='bold'>" + stationName + "</h1>");

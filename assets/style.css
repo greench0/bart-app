@@ -9,6 +9,7 @@ html, body {
   height: 100%;
   max-height: 100%;
   background-color: #f2f2f2;
+  font-family: 'Work Sans', sans-serif;
 }
  
 
@@ -16,17 +17,13 @@ html, body {
 
 .station {
   border-color: #111111;
-  border-width: 4px 0 1px 0;
+  /* border-width: 5px 0 0 0; */
     border-style: solid;
   /* height: 50px; */
   background-color: black;
   opacity: 50%;
   color: white;
-  padding-top: 5px;
-
-  font-family: 'Work Sans', sans-serif;
-  font-weight: bold;
-
+  padding-top: 4px;
 }
 
 .destination {
@@ -42,8 +39,12 @@ html, body {
 
 .destination:hover {
   background-color: white;
-  transition: background-color 0.5s ease-in;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 1s ease-in;
+
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
 
 }
 
@@ -54,7 +55,8 @@ html, body {
 
 
 .bold {
-  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 
 .btn
@@ -76,7 +78,7 @@ margin-bottom: 8px !important;
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #sidebar {
         margin-left: -270px;
     }
@@ -86,4 +88,4 @@ margin-bottom: 8px !important;
     #sidebarCollapse span {
         display: none;
     }
-}
+} */
