@@ -101,7 +101,7 @@ $.ajax({
     for (var i = 0; i < stationEtd.length; i++) {
       var destinationData = $("<div class='destination'></div>");
       // var rating = results[i].rating;
-      var p = $("<h3>").html("Destination: " + stationEtd[i].destination + " - Direction: " + stationEtd[i].estimate[0].direction);
+      var p = $("<h3>").html(stationEtd[i].destination + " - : " + stationEtd[i].estimate[0].direction);
 
         destinationData.append(p);
 

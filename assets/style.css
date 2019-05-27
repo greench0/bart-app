@@ -14,15 +14,39 @@ html, body {
 
 
 
-
-.destination {
+.station {
   border-color: #111111;
   border-width: 4px 0 1px 0;
+    border-style: solid;
+  /* height: 50px; */
+  background-color: black;
+  opacity: 50%;
+  color: white;
+  padding-top: 5px;
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+
+}
+
+.destination {
+  padding-top: 5px;
+  border-color: #111111;
+  border-width: 0 0 4px 0;
     border-style: solid;
   /* height: 50px; */
   background-color: #e2e2e2;
   opacity: 50%;
 }
+
+
+.destination:hover {
+  background-color: white;
+  transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-out;
+
+}
+
 
 .destination-south {
   background-color: #b48181;
