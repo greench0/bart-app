@@ -51,11 +51,8 @@ function showAlert(event) {
   var strUser = e.options[e.selectedIndex].value;
 console.log(strUser);
 
+
 stationAbbr = strUser;
-
-$(".etd").empty();
-$(".misc").empty();
-
 loadStation();
 }
 
@@ -95,8 +92,18 @@ $.ajax({
      stationName = data.root.station[0].name;
      stationEtd = data.root.station[0].etd;
 
+// var jsonStation = JSON.stringify(station);
+// console.log(stationEtd[0].estimate[0]);
+//     console.log(stationName);
+//     console.log(stationEtd[0].estimate[0].minutes);
+//     console.log(stationEtd[0].estimate[0].direction);
+    // console.log(stationEtd[0].estimate[0].length);
+    // console.log(stationEtd[0].estimate[0].delay);
+
 
 // ========== for loop
+
+
     for (var i = 0; i < stationEtd.length; i++) {
       var destinationData = $("<div class='destination'></div>");
       // var rating = results[i].rating;
@@ -107,7 +114,7 @@ $.ajax({
         // console.log(stationEtd[0].estimate.length);
 
       for (var j = 0; j < stationEtd[i].estimate.length; j++) {
-        var p2 = $("<p>").html("Arrives in: " + stationEtd[i].estimate[j].minutes + " MIN");
+        var p2 = $("<p>").html("Arrives in: " + stationEtd[i].estimate[j].minutes);
 
         // console.log(stationEtd[i].estimate[j].minutes);
         destinationData.append(p2);
