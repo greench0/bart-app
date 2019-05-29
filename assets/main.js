@@ -87,7 +87,7 @@ $.ajax({
     // Log the resulting object
     var results = data.data;
 
-    // console.log(data);
+    // console.log(data.root);
     
     // var example = data.childNodes[0].innerHTML;
      date = data.root.date;
@@ -101,12 +101,13 @@ $.ajax({
     for (var i = 0; i < stationEtd.length; i++) {
       var destinationData = $("<div class='destination'></div>");
       // var rating = results[i].rating;
-      var p = $("<h3>").html(stationEtd[i].destination + " - " + stationEtd[i].estimate[0].direction);
+      console.log();
+      var p = $("<h3><i class='fas fa-dot-circle' style='color:" + stationEtd[i].estimate[0].hexcolor +";'></i>" + stationEtd[i].destination + " - " + stationEtd[i].estimate[0].direction + "</h3>");
 
         destinationData.append(p);
 
       for (var j = 0; j < stationEtd[i].estimate.length; j++) {
-        var p2 = $("<p>").html("Arrives in: " + stationEtd[i].estimate[j].minutes + " MIN");
+        var p2 = $("<p>").html("Arrives in: " + stationEtd[i].estimate[j].minutes + " - " + stationEtd[i].estimate[0].length + " car train");
 
         destinationData.append(p2);
 

@@ -15,6 +15,7 @@ html, body {
 
 .container {
   padding-top: 10px;
+  width: 100% !important;
 }
 
 .station {
