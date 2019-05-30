@@ -29,6 +29,17 @@ html, body {
   padding-top: 4px;
 }
 
+.direction {
+  /* border-color: #444444; */
+  /* border-width: 5px 0 0 0; */
+    /* border-style: solid; */
+  /* height: 50px; */
+  background-color: #444444;
+  opacity: 50%;
+  color: white;
+  padding-top: 4px;
+}
+
 .destination {
   padding-top: 5px;
   border-color: #111111;
