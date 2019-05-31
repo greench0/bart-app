@@ -72,7 +72,7 @@ $(document).ready(function() {
 
           // var direction = $( "<h3 class='direction'>" + stationEtd[i].estimate[0].direction + "</h3>" );
 
-          var p = $( "<h3><i class='fas fa-dot-circle' style='color:" + stationEtd[i].estimate[0].hexcolor + ";'></i>" + stationEtd[i].destination + "</h3>" );
+          var p = $( "<h3><i class='fas fa-dot-circle' style='color:" + stationEtd[i].estimate[0].hexcolor + ";'></i><i class='fas fa-minus icon-minus' style='color:" + stationEtd[i].estimate[0].hexcolor + ";'></i> " + stationEtd[i].destination + "</h3>" );
 
           // destinationData.append(direction);
           destinationData.append(p);
@@ -122,7 +122,7 @@ $(document).ready(function() {
           var destinationData = $("<div class='destination'></div>");
           // var rating = results[i].rating;
           console.log();
-          var p = $( "<h3><i class='fas fa-dot-circle' style='color:" + stationEtd[i].estimate[0].hexcolor + ";'></i>" + stationEtd[i].destination + "</h3>" );
+          var p = $( "<h3><i class='fas fa-dot-circle' style='color:" + stationEtd[i].estimate[0].hexcolor + ";'></i><i class='fas fa-minus icon-minus' style='color:" + stationEtd[i].estimate[0].hexcolor + ";'></i> " + stationEtd[i].destination + "</h3>" );
 
           destinationData.append(p);
 

@@ -26,8 +26,14 @@ html, body {
   background-color: black;
   opacity: 50%;
   color: white;
-  padding-top: 4px;
+  padding: 4px 0 3px 10px;
+
 }
+
+/* .etd-north {
+  padding: 4px 0 3px 10px;
+
+} */
 
 .direction {
   /* border-color: #444444; */
@@ -37,7 +43,12 @@ html, body {
   background-color: #444444;
   opacity: 50%;
   color: white;
-  padding-top: 4px;
+  margin: 0;
+  padding: 0 0 3px 10px;
+}
+
+.icon-minus {
+margin-left: -10px;
 }
 
 .destination {
