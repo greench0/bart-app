@@ -19,13 +19,13 @@ html, body {
 }
 
 .station {
-  border-color: #FF007F;
+  /* border-color: #FF007F; */
   /* border-width: 5px 0 0 0; */
-    border-style: solid;
+    /* border-style: solid; */
   /* height: 50px; */
-  background-color: black;
-  opacity: 50%;
-  color: white;
+  background-color: #FF007F;
+  opacity: 80%;
+  /* color: white; */
   padding: 4px 0 3px 10px;
 
 }
@@ -53,7 +53,7 @@ margin-left: -10px;
 
 .destination {
   padding-top: 5px;
-  border-color: #FF007F;
+  /* border-color: #FF007F; */
   border-width: 0 0 4px 0;
     border-style: solid;
   /* height: 50px; */
