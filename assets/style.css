@@ -53,8 +53,8 @@ margin-left: -10px;
 
 .destination {
   padding-top: 5px;
-  /* border-color: #FF007F; */
-  border-width: 0 0 4px 0;
+  border-color: #444444;
+  border-width: 0 0 2px 0;
     border-style: solid;
   /* height: 50px; */
     color: black;
