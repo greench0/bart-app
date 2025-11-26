@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var stationAbbr = "12th";
+  var stationAbbr = "24TH";
   var APIKey = "MW9S-E7SL-26DU-VV8V";
 
   $.ajax({
