@@ -1,117 +1,100 @@
 html, body {
   margin: 0;
   padding: 0;
-  min-width: 100%;
   width: 100%;
-  max-width: 100%;
-
-  min-height: 100%;
   height: 100%;
-  max-height: 100%;
-  background-color: #f2f2f2;
-  font-family: 'Work Sans', sans-serif;
+  background-color: #000;
+  font-family: "Helvetica Neue", "Work Sans", Arial, sans-serif;
+  color: #ffffff;
 }
- 
 
+/* MAIN CONTAINER */
 .container {
-  padding-top: 10px;
+  padding-top: 8px;
   width: 100% !important;
+  background-color: #000;
 }
 
+/* STATION HEADER (POWELL STATION) */
 .station {
-  /* border-color: #FF007F; */
-  /* border-width: 5px 0 0 0; */
-    /* border-style: solid; */
-  /* height: 50px; */
-  background-color: #444444;
-  opacity: 80%;
-  color: white;
-  padding: 4px 0 3px 10px;
-
+  background-color: #e5e5e5;
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-bottom: 2px solid #bbb;
 }
 
-/* .etd-north {
-  padding: 4px 0 3px 10px;
-
-} */
-
+/* DIRECTION HEADERS (Inbound / Outbound / Platform) */
 .direction {
-  /* border-color: #444444; */
-  /* border-width: 5px 0 0 0; */
-    /* border-style: solid; */
-  /* height: 50px; */
-  background-color: #444444;
-  opacity: 50%;
-  color: white;
+  background-color: #dcdcdc;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 5px 12px;
   margin: 0;
-  padding: 0 0 3px 10px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
 }
 
-.icon-minus {
-margin-left: -10px;
-}
-
+/* DESTINATION ROWS */
 .destination {
-  padding-top: 5px;
-  border-color: #444444;
-  border-width: 0 0 2px 0;
-    border-style: solid;
-  /* height: 50px; */
-    color: black;
-  background-color: #e2e2e2;
-  opacity: 90%;
+  background-color: #000;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-bottom: 1px solid #222;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+/* Arrival times */
+.destination span.time,
+.destination .minutes {
+  color: #9cff9c;
+  font-weight: 700;
+  margin-left: auto;
+}
 
+/* Hover (subtle, not flashy like a website) */
 .destination:hover {
-  background-color: white;
-  transition: background-color 1s ease-in;
-
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-
+  background-color: #111;
+  transition: background-color 0.25s linear;
 }
 
-
+/* SOUTHBOUND / SPECIAL DESTINATION */
 .destination-south {
-  background-color: #b48181;
+  background-color: #111;
 }
 
+/* ICON FIX */
+.icon-minus {
+  margin-left: -8px;
+}
 
+/* BOLD TEXT */
 .bold {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 
-.btn
-{
-margin-right: 6px;
-margin-bottom: 8px !important;
--webkit-border-radius: 0 !important;
--moz-border-radius: 0 !important;
-     border-radius: 0 !important;
+/* BUTTONS (flattened like transit UI) */
+.btn {
+  margin-right: 6px;
+  margin-bottom: 8px !important;
+  border-radius: 0 !important;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
 }
 
-
-
-/* -----------------------------------------------------------------------------------------------------------------------------------------
------- Footer Section ------------------- */
-
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-
-/* @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -270px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-} */
+/* FOOTER / ALERTS */
+.footer,
+.alert,
+.notice {
+  background-color: #e5e5e5;
+  color: #000;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-top: 2px solid #bbb;
+}
